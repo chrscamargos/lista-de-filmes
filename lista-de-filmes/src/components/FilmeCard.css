@@ -1,0 +1,68 @@
+.filme-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 6px solid #ccc;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.filme-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.filme-card.card-assistido {
+  border-left-color: #2ecc71;
+}
+
+.filme-card.card-nao-assistido {
+  border-left-color: #e74c3c;
+}
+
+.filme-card h1 {
+  font-size: 1.2rem;
+  margin: 0 0 4px 0;
+  color: #2c3e50;
+}
+
+.filme-card p {
+  margin: 2px 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.status {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.status p {
+  font-size: 0.85rem;
+}
+
+.status strong {
+  margin-left: 4px;
+}
+
+.status button {
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.status button:hover {
+  background-color: #2980b9;
+}
